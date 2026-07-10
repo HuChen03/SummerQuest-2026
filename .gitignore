@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+!.env.example
+*.log
+.secrets/
+credentials.json
+token.json
+starter/default_codex_bot/bot.toml
+*.ckpt
+*.pt
+*.pth
+*.safetensors

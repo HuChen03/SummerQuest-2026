@@ -1,0 +1,12 @@
+[student]
+name = "<同学真名>"
+profile_path = "../../students/<同学真名>/PROFILE.md"
+
+[feishu]
+app_id = "cli_xxxxxxxxxxxxxxxx"
+app_secret_env_key = "FEISHU_APP_SECRET"
+
+[codex]
+base_url_env_key = "AIGW_BASE_URL"
+api_key_env_key = "AIGW_API_KEY"
+timeout_seconds = 240

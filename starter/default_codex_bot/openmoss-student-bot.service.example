@@ -1,0 +1,15 @@
+[Unit]
+Description=OpenMOSS SummerQuest student Codex bot
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/SummerQuest-2026
+EnvironmentFile=%h/.config/openmoss-student-bot/env
+ExecStart=%h/SummerQuest-2026/.venv/bin/python %h/SummerQuest-2026/starter/default_codex_bot/bot.py --config %h/SummerQuest-2026/starter/default_codex_bot/bot.toml
+Restart=on-failure
+RestartSec=5
+UMask=0077
+
+[Install]
+WantedBy=default.target
