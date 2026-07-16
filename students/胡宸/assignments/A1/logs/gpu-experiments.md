@@ -1,6 +1,15 @@
 # GPU Experiments
 
-All runs used the implementation in `../assignment1-basics` and wrote raw artifacts under `runs/`. Checkpoints, encoded corpora, tokenizer files and raw JSONL logs are not committed.
+All runs used the implementation in `../assignment1-basics` and wrote raw artifacts under `runs/`. Checkpoints, encoded corpora and tokenizer files are not committed. Normalized JSONL logs are committed next to this summary:
+
+- `train_tinystories.jsonl`
+- `train_owt.jsonl`
+- `ablation_no_rmsnorm.jsonl`, `ablation_post_norm.jsonl`, `ablation_no_rope.jsonl`, `ablation_silu_ffn.jsonl`
+- `lr_sweep/*.jsonl`
+- `batch_size/*.jsonl`
+- `summary.json`
+
+Each step record includes `step`, `wall_clock_sec`, `train_loss` and `lr`; validation records also include `valid_loss`.
 
 ## TinyStories Full-Model Runs
 
